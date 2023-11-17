@@ -28,7 +28,7 @@ app.post("/login",(req,res)=>{
     })
 })
 
-app.post('/register',(req, res)=>{
+app.post('/',(req, res)=>{
     LoginModel.create(req.body)
     .then(employees => res.json(employees))
     .catch(err=> res.json(err))
